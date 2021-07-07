@@ -32,7 +32,13 @@ pipeline {
 		}
 	} post {
 			always {
-				echo 'ALL DONE'
+				echo "ALWAYS"
+			}
+			success {
+				echo "SUCCESS"
+			}
+			failure {
+				echo "FAIL"
 			}
 	}
 }
