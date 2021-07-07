@@ -30,5 +30,9 @@ pipeline {
 				echo "Build 3"
 			}
 		}
+	} post {
+			always {
+				echo 'ALL DONE'
+			}
 	}
 }
