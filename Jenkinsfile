@@ -17,28 +17,28 @@ pipeline {
 	stages {
 		stage('Build 1') {
 			steps {
-				echo "Build 1"
+				echo 'Build 1'
 			}
 		}
 		stage('Build 2') {
 			steps {
-				echo "Build 2"
+				echo 'Build 2'
 			}
 		}
 		stage('Build 3') {
 			steps {
-				echo "Build 3"
+				echo 'Build 3'
 			}
 		}
 	} post {
 			always {
-				echo "ALWAYS"
+				echo 'ALWAYS'
 			}
 			success {
-				echo "SUCCESS"
+				echo 'SUCCESS'
 			}
 			failure {
-				echo "FAIL"
+				echo 'FAIL'
 			}
 	}
 }
